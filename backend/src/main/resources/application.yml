@@ -1,0 +1,8 @@
+server:
+  port: 8080
+  address: 127.0.0.1
+spring:
+  application:
+    name: OnlineOrder
+  jackson:
+    property-naming-strategy: SNAKE_CASE
