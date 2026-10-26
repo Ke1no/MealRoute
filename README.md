@@ -56,5 +56,5 @@ The smoke test checks server startup, snake_case menus, an anonymous cart return
 
 ## Continue development
 
-Start with [中文开发顺序](docs/NEXT_STEPS.zh-CN.md), [course mapping](docs/COURSE_MAP.md), [API contract](docs/API.md) and [architecture](docs/ARCHITECTURE.md).
+Start with [development roadmap](docs/NEXT_STEPS.md), [course mapping](docs/COURSE_MAP.md), [API contract](docs/API.md) and [architecture](docs/ARCHITECTURE.md).
 Preserve your existing authentication code when merging it later. No license is granted for the original course material, and the source document itself is not included.

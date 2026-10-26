@@ -1,6 +1,6 @@
 # Course alignment
 
-Source: user-provided [202609 项目班存档1 (QuickBite)](https://docs.google.com/document/d/13vFzACVU0mnM_p6aP1TtQk0NgTvO6PKp-1T1usabVd0/edit), read 2026-10-26.
+Source: user-provided [September 2026 Project Course Archive 1 (QuickBite)](https://docs.google.com/document/d/13vFzACVU0mnM_p6aP1TtQk0NgTvO6PKp-1T1usabVd0/edit), read 2026-10-26.
 
 | Lesson | Course structure retained | Scaffold status |
 | --- | --- | --- |
