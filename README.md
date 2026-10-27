@@ -1,19 +1,52 @@
 # QuickBite
 
-Course-aligned full-stack food-ordering project — **scaffold / work in progress**.
+### Restaurant discovery and menu browsing
 
-Java 21 · Spring Boot 4 · Gradle · PostgreSQL · React · TypeScript · Vite · React Router · TanStack Query · Tailwind CSS
+A full-stack food-ordering project built with a Java API and a typed React client. The current demo connects restaurant discovery and menu screens to live backend endpoints serving synthetic data.
 
-## Current status
+**Java 21 · Spring Boot 4 · React · TypeScript · TanStack Query · Tailwind CSS**
 
-| Area | Included | Still to implement |
-| --- | --- | --- |
-| Backend | Boot entry point, course packages, public restaurant/menu API with synthetic fixtures, protected-route 401 behavior | JDBC wiring, signup/session login, cart mutations and checkout |
-| Data | Five course entities, five repository interfaces, non-destructive schema | Database-backed services, initialization policy and seed data |
-| Frontend | Discovery/menu screens, course route shells, API client and Query provider | Session provider, form submission, live cart and order flow |
-| Delivery | Local setup and validation workflow | Docker application image and AWS deployment |
+[Run locally](#run-locally) · [API contract](docs/API.md) · [Development roadmap](docs/NEXT_STEPS.md)
 
-The fixture menu is demo data. Authentication, payment, persistence and deployment are **not** represented as finished. This is a fresh scaffold derived from the course structure, not an import of your existing working QuickBite project.
+![QuickBite restaurant discovery screen](docs/assets/discover.jpg)
+
+*Actual browser capture: restaurant cards loaded from the running Spring Boot API.*
+
+<details>
+<summary>View the restaurant menu screen</summary>
+
+![QuickBite menu screen](docs/assets/menu.jpg)
+
+*Menu items and prices come from synthetic API fixtures. Cart actions are not implemented yet.*
+
+</details>
+
+## Engineering highlights
+
+- React Router separates discovery and restaurant menus; TanStack Query manages API data.
+- Spring Boot exposes restaurant/menu endpoints with a documented snake_case contract.
+- Smoke checks cover startup, menu responses, anonymous cart rejection and unknown restaurants.
+- Entity definitions, repository interfaces and a PostgreSQL schema prepare the next persistence milestone.
+
+## Architecture
+
+```mermaid
+flowchart LR
+  UI[React screens] --> Q[TanStack Query]
+  Q --> API[Spring Boot API]
+  API --> F[Synthetic fixtures]
+  API -. planned .-> DB[PostgreSQL]
+```
+
+## Current scope
+
+| Working local demo | Next milestones |
+| --- | --- |
+| Restaurant discovery and menu browsing | Database-backed services |
+| Public API and protected-route 401 responses | Signup and session login |
+| Typed frontend client and validation workflow | Cart, checkout and deployment |
+
+**Status: runnable scaffold, in active development.** The demo does not process payments, persist orders or implement authentication. [Screenshot reproduction](docs/SHOWCASE.md).
 
 ## Run locally
 
