@@ -9,3 +9,5 @@ Start both services using the README. Open the discovery page, then open Campus 
 ## Interpretation
 
 Screenshots document the visible state of this development scaffold. They do not imply a public deployment, production readiness or completion of planned features. See the README for implemented scope and validation.
+
+The screenshots show the current MealRoute branding and replace the earlier preview assets.
