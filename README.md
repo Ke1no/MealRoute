@@ -1,4 +1,4 @@
-# QuickBite
+# MealRoute
 
 ### Restaurant discovery and menu browsing
 
@@ -8,18 +8,20 @@ A full-stack food-ordering project built with a Java API and a typed React clien
 
 [Run locally](#run-locally) · [API contract](docs/API.md) · [Development roadmap](docs/NEXT_STEPS.md)
 
-![QuickBite restaurant discovery screen](docs/assets/discover.jpg)
+![MealRoute restaurant discovery screen](docs/assets/discover.jpg)
 
 *Actual browser capture: restaurant cards loaded from the running Spring Boot API.*
 
 <details>
 <summary>View the restaurant menu screen</summary>
 
-![QuickBite menu screen](docs/assets/menu.jpg)
+![MealRoute menu screen](docs/assets/menu.jpg)
 
 *Menu items and prices come from synthetic API fixtures. Cart actions are not implemented yet.*
 
 </details>
+
+*Screenshots were captured before the project rename and retain the previous display name.*
 
 ## Engineering highlights
 

@@ -1,6 +1,6 @@
 # Next steps: follow the course implementation sequence
 
-1. **Merge your existing QuickBite backend first.** This repository is a new scaffold; your course project source has not been imported. Preserve existing login, signup, logout and cart code, and compare files individually instead of replacing entire directories.
+1. **Merge your existing MealRoute backend first.** This repository is a new scaffold; your course project source has not been imported. Preserve existing login, signup, logout and cart code, and compare files individually instead of replacing entire directories.
 2. **Database and repositories (Lessons 7–9).** Start PostgreSQL, replace the JDBC dependency with the Boot starter, configure environment variables, and integrate entities and repositories with Spring. Do not run database recreation scripts against an existing database.
 3. **Services and controllers (Lessons 11–13).** Implement RestaurantService and MenuItemService using the database, then implement CartService. Verify the two menu endpoints first.
 4. **Authentication (Lesson 14).** Implement CustomerService, password hashing, UserDetailsService, /signup and form-based /login. Add a CSRF token bootstrap flow and verify that /cart returns 401 after logout. No default login account exists.
